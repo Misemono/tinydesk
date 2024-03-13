@@ -15,8 +15,8 @@ const useStyles = makeStyles({
 });
 
 const loginWithGoogle = () => {
-  // window.open("https://api.tinydesk.me/google", "_self");
-  window.open("http://localhost:4000/google", "_self");
+  window.open("https://api.tinydesk.me/google", "_self");
+  // window.open("http://localhost:4000/google", "_self");
 };
 
 const WelcomePage = () => {

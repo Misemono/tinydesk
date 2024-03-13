@@ -9,6 +9,7 @@ export const login = (data, setError, setFilter) => {
     .post("/login", data)
     .then((res) => {
       if (res.data == "Successfully Authenticated") {
+        console.log("Successfully Authenticated");
         navigate("/home");
       } else {
         setError(true);

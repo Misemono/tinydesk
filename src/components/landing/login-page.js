@@ -76,6 +76,17 @@ const LoginPage = () => {
                   error={error}
                   disabled={filter}
                 />
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  disableElevation
+                  disableTouchRipple
+                  onClick={login}
+                  disabled={filter}
+                >
+                  Log in
+                </Button>
               </form>
 
               {error ? (
@@ -85,16 +96,7 @@ const LoginPage = () => {
               ) : (
                 <></>
               )}
-              <Button
-                variant="contained"
-                color="primary"
-                disableElevation
-                disableTouchRipple
-                onClick={login}
-                disabled={filter}
-              >
-                Log in
-              </Button>
+
             </CardContent>
             {filter ? <LinearProgress /> : <></>}
           </Card>

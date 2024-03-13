@@ -5,6 +5,7 @@ import { convertFromRaw } from "draft-js";
 export const getUserData = (setter) => {
   client.get("/home").then((res) => {
     if (res.data == "no uid") {
+      console.log("no uid");
       navigate("/login");
     } else {
       setter.setFolders(res.data.folders);

@@ -184,22 +184,24 @@ const SignupPage = () => {
                     <TextField {...params} label="Cities" variant="standard" />
                   )}
                 ></Autocomplete>
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  disableElevation
+                  disableTouchRipple
+                  onClick={register}
+                  disabled={disabled}
+                >
+                  Create an account
+                </Button>
               </form>
               {error ? (
                 <div className={classes.errorMessage}>User already exists!</div>
               ) : (
                 <></>
               )}
-              <Button
-                variant="contained"
-                color="primary"
-                disableElevation
-                disableTouchRipple
-                onClick={register}
-                disabled={disabled}
-              >
-                Create an account
-              </Button>
+
             </CardContent>
           </Card>
           <Grid container justify="space-between" alignItems="center">
