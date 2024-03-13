@@ -83,6 +83,7 @@ const LoginPage = () => {
                   disableElevation
                   disableTouchRipple
                   onClick={login}
+                  type="submit"
                   disabled={filter}
                 >
                   Log in

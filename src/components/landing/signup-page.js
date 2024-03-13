@@ -191,6 +191,7 @@ const SignupPage = () => {
                   disableElevation
                   disableTouchRipple
                   onClick={register}
+                  type="submit"
                   disabled={disabled}
                 >
                   Create an account
